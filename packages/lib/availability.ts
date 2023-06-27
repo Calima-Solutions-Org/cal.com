@@ -69,9 +69,7 @@ export function getWorkingHours(
   if (!availability.length) {
     return [];
   }
-  const utcOffset =
-    relativeTimeUnit.utcOffset ??
-    (relativeTimeUnit.timeZone ? dayjs().tz(relativeTimeUnit.timeZone).utcOffset() : 0);
+  const utcOffset = 0;
 
   const workingHours = availability.reduce((currentWorkingHours: WorkingHours[], schedule) => {
     // Include only recurring weekly availability, not date overrides
