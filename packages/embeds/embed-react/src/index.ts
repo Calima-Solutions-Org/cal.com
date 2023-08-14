@@ -1,5 +1,3 @@
-"use client";
-
 import type { GlobalCal } from "@calcom/embed-core";
 import EmbedSnippet from "@calcom/embed-snippet";
 
