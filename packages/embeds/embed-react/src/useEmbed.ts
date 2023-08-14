@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 
 import EmbedSnippet from "@calcom/embed-snippet";
