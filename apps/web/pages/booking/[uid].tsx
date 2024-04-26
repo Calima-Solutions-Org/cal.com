@@ -433,7 +433,7 @@ export default function Success(props: SuccessProps) {
                         tz={tz}
                       />
                     </div>
-                    {(bookingInfo?.user || bookingInfo?.attendees) && (
+                    {false && (bookingInfo?.user || bookingInfo?.attendees) && (
                       <>
                         <div className="font-medium">{t("who")}</div>
                         <div className="col-span-2 last:mb-0">
@@ -507,7 +507,7 @@ export default function Success(props: SuccessProps) {
                             className="text-default break-words"
                             data-testid="field-response"
                             data-fob-field={field.name}>
-                            {response.toString()}
+                            {response.toString() === 'Incident' ? 'Incidencia' : response.toString()}
                           </p>
                         </>
                       );
