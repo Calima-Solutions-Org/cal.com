@@ -15,14 +15,7 @@ export type EventNameObjectType = {
 
 export function getEventName(eventNameObj: EventNameObjectType, forAttendeeView = false) {
   if (!eventNameObj.eventName)
-    return eventNameObj.t("event_between_users", {
-      eventName: eventNameObj.eventType,
-      host: eventNameObj.host,
-      attendeeName: eventNameObj.attendeeName,
-      interpolation: {
-        escapeValue: false,
-      },
-    });
+    return eventNameObj.eventType;
 
   let eventName = eventNameObj.eventName;
   let locationString = eventNameObj.location || "";
