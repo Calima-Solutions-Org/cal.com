@@ -506,7 +506,7 @@ export default function Success(props: SuccessProps) {
                             className="text-default break-words"
                             data-testid="field-response"
                             data-fob-field={field.name}>
-                            {response.toString() === 'Incident' ? 'Incidencia' : response.toString()}
+                            {response.toString() === "Incident" ? "Incidencia" : response.toString()}
                           </p>
                         </>
                       );
