@@ -66,4 +66,5 @@ module.exports = withAxiom({
       ],
     };
   },
+  experimental: { esmExternals: false },
 });

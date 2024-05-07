@@ -37,6 +37,7 @@ const nextConfig = {
     }
     return config;
   },
+  experimental: { esmExternals: false },
 };
 
 module.exports = () => plugins.reduce((acc, next) => next(acc), nextConfig);

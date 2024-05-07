@@ -479,6 +479,7 @@ const nextConfig = {
 
     return redirects;
   },
+  experimental: { esmExternals: false },
 };
 
 module.exports = () => plugins.reduce((acc, next) => next(acc), nextConfig);
