@@ -439,10 +439,10 @@ export default function Success(props: SuccessProps) {
                           {bookingInfo?.user && (
                             <div className="mb-3">
                               <div>
-                                <span className="mr-2">{bookingInfo.user.name}</span>
+                                <span className="mr-2">{bookingInfo?.user?.name}</span>
                                 <Badge variant="blue">{t("Host")}</Badge>
                               </div>
-                              <p className="text-default">{bookingInfo.user.email}</p>
+                              <p className="text-default">{bookingInfo?.user?.email}</p>
                             </div>
                           )}
                           {bookingInfo?.attendees.map((attendee) => (
